@@ -17,6 +17,9 @@ def sum_and_sorted(num1, num2=3.141592653589793, verbose=False):
         print(f"\nVerbose=True\n{num1=}\n{num2=}\nSum: {total}\nSorted: {sort_num}")
 
 def make_shirt(text, size="L"):
+  '''
+  Make a t-shirt with whatever text you choose. The default t-shirt size will be L if size is not provided.
+  '''
   print(f"The shirt is a size {size}")
   print(f"We will print this text on the shirt: {text}")
 
@@ -30,3 +33,6 @@ if __name__ == '__main__':
     sum_and_sorted(15)
     sum_and_sorted(23, 2)
     sum_and_sorted(4, 3, True)
+    help(__name__)
+    help(make_shirt("random text"))
+    help(sum_and_sorted(2))
